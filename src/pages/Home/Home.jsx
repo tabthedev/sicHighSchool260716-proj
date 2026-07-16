@@ -1,4 +1,6 @@
 import '../../index.css'
+import './home.css'
+import { Link } from 'react-router-dom'
 
 const notices = [
   { id: 1, title: '2026학년도 신입생 입학 안내', date: '2026.07.16' },
@@ -8,63 +10,13 @@ const notices = [
 
 export default function Home() {
     return <>
-      <style>{`
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: Arial, sans-serif; color: #172033; background: #fff; }
-        a { color: inherit; text-decoration: none; }
-        button { font: inherit; }
-
-        .home-header {
-          display: flex; align-items: center; justify-content: space-between;
-          max-width: 1180px; margin: 0 auto; padding: 20px 24px;
-        }
-        .logo { font-size: 23px; font-weight: 800; color: #174ea6; }
-        .nav { display: flex; gap: 30px; font-weight: 600; color: #4b5563; }
-        .nav a:hover { color: #174ea6; }
-
-        .hero { background: linear-gradient(135deg, #174ea6, #3b82f6); color: white; }
-        .hero-inner { max-width: 1180px; margin: 0 auto; padding: 100px 24px; }
-        .hero-label { margin: 0 0 14px; font-weight: 700; color: #dbeafe; }
-        .hero h1 { margin: 0; max-width: 700px; font-size: clamp(38px, 6vw, 64px); line-height: 1.15; }
-        .hero-description { max-width: 570px; margin: 24px 0 32px; font-size: 18px; line-height: 1.7; color: #eaf2ff; }
-        .hero-button { display: inline-block; padding: 14px 22px; border-radius: 10px; background: white; color: #174ea6; font-weight: 800; }
-
-        .section { max-width: 1180px; margin: 0 auto; padding: 80px 24px; }
-        .section-heading { margin-bottom: 32px; }
-        .section-heading h2 { margin: 0 0 10px; font-size: 32px; }
-        .section-heading p { margin: 0; color: #6b7280; }
-        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(15, 23, 42, .06); }
-        .card-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 20px; border-radius: 12px; background: #eaf2ff; font-size: 23px; }
-        .card h3 { margin: 0 0 10px; }
-        .card p { margin: 0; line-height: 1.7; color: #6b7280; }
-
-        .notice-wrap { background: #f7f9fc; }
-        .notice-header { display: flex; justify-content: space-between; align-items: end; }
-        .more { color: #174ea6; font-weight: 700; }
-        .notice-list { margin: 0; padding: 0; list-style: none; border-top: 2px solid #172033; }
-        .notice-list li { display: flex; justify-content: space-between; gap: 20px; padding: 20px 8px; border-bottom: 1px solid #dfe3ea; }
-        .notice-list time { flex-shrink: 0; color: #6b7280; }
-
-        .home-footer { padding: 30px 24px; text-align: center; color: #9ca3af; background: #172033; }
-
-        @media (max-width: 720px) {
-          .home-header { align-items: flex-start; flex-direction: column; gap: 16px; }
-          .nav { width: 100%; justify-content: space-between; gap: 12px; font-size: 14px; }
-          .hero-inner { padding-top: 72px; padding-bottom: 72px; }
-          .cards { grid-template-columns: 1fr; }
-          .section { padding-top: 60px; padding-bottom: 60px; }
-          .notice-list li { flex-direction: column; gap: 8px; }
-        }
-      `}</style>
 
       <header className="home-header">
-        <a className="logo" href="#top">SIC HIGH SCHOOL</a>
+        <Link className="logo" to={{ pathname: '/', hash: '#top' }}></Link>
         <nav className="nav" aria-label="주요 메뉴">
-          <a href="#about">학교소개</a>
-          <a href="#programs">교육활동</a>
-          <a href="#notice">학교소식</a>
+          <Link to={{ pathname: '/', hash: '#about' }}>학교소개</Link>
+          <Link to={{ pathname: '/', hash: '#programs' }}>교육활동</Link>
+          <Link to={{ pathname: '/', hash: '#notice' }}>학교소식</Link>
         </nav>
       </header>
 
@@ -77,7 +29,7 @@ export default function Home() {
               서로를 존중하며 배우고 도전하는 교육 공동체,
               SIC 고등학교에 오신 것을 환영합니다.
             </p>
-            <a className="hero-button" href="#about">학교 알아보기</a>
+            <Link className="hero-button" to={{ pathname: '/', hash: '#about' }}>학교 알아보기</Link>
           </div>
         </section>
 
@@ -113,7 +65,7 @@ export default function Home() {
                 <h2>공지사항</h2>
                 <p>학교의 새로운 소식을 확인하세요.</p>
               </div>
-              <a className="more" href="#notice">전체보기 →</a>
+              <Link className="more" to={{ pathname: '/', hash: '#notice' }}>전체보기 →</Link>
             </div>
             <ul className="notice-list">
               {notices.map((notice) => (
