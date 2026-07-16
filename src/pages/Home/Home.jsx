@@ -1,11 +1,6 @@
 import '../../index.css'
+import { Link } from 'react-router-dom'
 import GlobalHeader from '../../pageFormat/header'
-
-const notices = [
-  { id: 1, title: '2026학년도 신입생 입학 안내', date: '2026.07.16' },
-  { id: 2, title: '여름방학 학사 일정 안내', date: '2026.07.12' },
-  { id: 3, title: '교내 동아리 활동 안내', date: '2026.07.08' },
-]
 
 export default function Home() {
     return <>
@@ -16,12 +11,9 @@ export default function Home() {
         <section className="hero">
           <div className="hero-inner">
             <p className="hero-label">두뇌를 이용하여, 한계를 돌파하라</p>
-            <h1>여러분의 뇌를 꺠우는 puzzle master</h1>
-            <p className="hero-description">
-              여러분의 의견을 적극 수용하는,
-              puzzle master홈페이지에 오신것을 환영합니다
-            </p>
-            <Link className="hero-button" to="/about">게임 설치하기</Link>
+            <h1>여러분의 뇌를 꺠우는 SIC BLAST!</h1>
+            <br />
+            <Link className="hero-button" to="/game01">게임 시작하기</Link>
           </div>
         </section>
 
@@ -50,25 +42,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="notice-wrap" id="notice">
-          <section className="section">
-            <div className="section-heading notice-header">
-              <div>
-                <h2>공지사항</h2>
-                <p>학교의 새로운 소식을 확인하세요.</p>
-              </div>
-              <Link className="more" to="/notice">전체보기 →</Link>
-            </div>
-            <ul className="notice-list">
-              {notices.map((notice) => (
-                <li key={notice.id}>
-                  <span>{notice.title}</span>
-                  <time dateTime={notice.date.replaceAll('.', '-')}>{notice.date}</time>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </div>
+        
       </main>
 
       <footer className="home-footer">
