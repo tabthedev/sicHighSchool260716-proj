@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../index.css'
+import GlobalHeader from '../../pageFormat/header'
 
 const BOARD_SIZE = 8
 const COLORS = ['blue', 'purple', 'orange', 'green', 'pink']
@@ -173,14 +174,7 @@ export default function Game01() {
 
   return (
     <>
-      <header className="home-header">
-        <Link className="logo game-logo" to="/">SIC PLAY</Link>
-        <nav className="nav" aria-label="주요 메뉴">
-          <Link to="/">홈</Link>
-          <Link to="/about">학교소개</Link>
-          <Link className="active-link" to="/game01">Block Blast</Link>
-        </nav>
-      </header>
+      <GlobalHeader />
 
       <main className="game-page">
         <section className="game-intro">
