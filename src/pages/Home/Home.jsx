@@ -7,8 +7,7 @@ const notices = [
 ]
 
 export default function Home() {
-  return (
-    <div className="home">
+    return <>
       <style>{`
         * { box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -131,10 +130,6 @@ export default function Home() {
       <footer className="home-footer">
         <p>© 2026 SIC High School. All rights reserved.</p>
       </footer>
-    </div>
-  )
-}
-    return <>
     <h1>BLOCK BLAST</h1>
     <h2></h2>
     <h3>게임 시작하기</h3>
