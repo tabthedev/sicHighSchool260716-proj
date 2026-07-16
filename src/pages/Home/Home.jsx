@@ -12,11 +12,11 @@ export default function Home() {
     return <>
 
       <header className="home-header">
-        <Link className="logo" to={{ pathname: '/', hash: '#top' }}></Link>
+        <Link className="logo" to="/"></Link>
         <nav className="nav" aria-label="주요 메뉴">
-          <Link to={{ pathname: '/', hash: '#about' }}>학교소개</Link>
-          <Link to={{ pathname: '/', hash: '#programs' }}>교육활동</Link>
-          <Link to={{ pathname: '/', hash: '#notice' }}>학교소식</Link>
+          <Link to="/about">학교소개</Link>
+          <Link to="/programs">교육활동</Link>
+          <Link to="/notice">학교소식</Link>
         </nav>
       </header>
 
@@ -29,7 +29,7 @@ export default function Home() {
               서로를 존중하며 배우고 도전하는 교육 공동체,
               SIC 고등학교에 오신 것을 환영합니다.
             </p>
-            <Link className="hero-button" to={{ pathname: '/', hash: '#about' }}>학교 알아보기</Link>
+            <Link className="hero-button" to="/about">학교 알아보기</Link>
           </div>
         </section>
 
@@ -65,7 +65,7 @@ export default function Home() {
                 <h2>공지사항</h2>
                 <p>학교의 새로운 소식을 확인하세요.</p>
               </div>
-              <Link className="more" to={{ pathname: '/', hash: '#notice' }}>전체보기 →</Link>
+              <Link className="more" to="/notice">전체보기 →</Link>
             </div>
             <ul className="notice-list">
               {notices.map((notice) => (
@@ -82,8 +82,5 @@ export default function Home() {
       <footer className="home-footer">
         <p>© 2026 서인천고등학교. All rights reserved.</p>
       </footer>
-    <h1>BLOCK BLAST</h1>
-    <h2></h2>
-    <h3>게임 시작하기</h3>
     </>
 }
