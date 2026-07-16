@@ -1,4 +1,4 @@
-import { HashRouter } from 'react'
+import { HashRouter, Routes, Route } from 'react'
 import Home from './Home/Home.jsx'
 
 export default function Root() {
