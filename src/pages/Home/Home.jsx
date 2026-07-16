@@ -128,7 +128,7 @@ export default function Home() {
       </main>
 
       <footer className="home-footer">
-        <p>© 2026 SIC High School. All rights reserved.</p>
+        <p>© 2026 서인천고등학교. All rights reserved.</p>
       </footer>
     <h1>BLOCK BLAST</h1>
     <h2></h2>
