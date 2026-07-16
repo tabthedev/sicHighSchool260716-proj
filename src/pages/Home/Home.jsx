@@ -134,3 +134,9 @@ export default function Home() {
     </div>
   )
 }
+    return <>
+    <h1>BLOCK BLAST</h1>
+    <h2></h2>
+    <h3>게임 시작하기</h3>
+    </>
+}
