@@ -1,35 +1,19 @@
 import '../../index.css'
-import './home.css'
 import { Link } from 'react-router-dom'
-
-const notices = [
-  { id: 1, title: '2026학년도 신입생 입학 안내', date: '2026.07.16' },
-  { id: 2, title: '여름방학 학사 일정 안내', date: '2026.07.12' },
-  { id: 3, title: '교내 동아리 활동 안내', date: '2026.07.08' },
-]
+import GlobalHeader from '../../pageFormat/header'
 
 export default function Home() {
     return <>
 
-      <header className="home-header">
-        <Link className="logo" to="/"></Link>
-        <nav className="nav" aria-label="주요 메뉴">
-          <Link to="/about">학교소개</Link>
-          <Link to="/programs">교육활동</Link>
-          <Link to="/notice">학교소식</Link>
-        </nav>
-      </header>
+      <GlobalHeader />
 
       <main id="top">
         <section className="hero">
           <div className="hero-inner">
-            <p className="hero-label">배움으로 성장하고, 함께 미래를 만듭니다</p>
-            <h1>학생의 꿈이 시작되는 즐거운 학교</h1>
-            <p className="hero-description">
-              서로를 존중하며 배우고 도전하는 교육 공동체,
-              SIC 고등학교에 오신 것을 환영합니다.
-            </p>
-            <Link className="hero-button" to="/about">학교 알아보기</Link>
+            <p className="hero-label">두뇌를 이용하여, 한계를 돌파하라</p>
+            <h1>여러분의 뇌를 꺠우는 SIC BLAST!</h1>
+            <br />
+            <Link className="hero-button" to="/game01">게임 시작하기</Link>
           </div>
         </section>
 
@@ -58,25 +42,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="notice-wrap" id="notice">
-          <section className="section">
-            <div className="section-heading notice-header">
-              <div>
-                <h2>공지사항</h2>
-                <p>학교의 새로운 소식을 확인하세요.</p>
-              </div>
-              <Link className="more" to="/notice">전체보기 →</Link>
-            </div>
-            <ul className="notice-list">
-              {notices.map((notice) => (
-                <li key={notice.id}>
-                  <span>{notice.title}</span>
-                  <time dateTime={notice.date.replaceAll('.', '-')}>{notice.date}</time>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </div>
+        
       </main>
 
       <footer className="home-footer">
