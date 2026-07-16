@@ -14,7 +14,7 @@ export default function Home() {
             <p className="hero-label">두뇌를 이용하여, 한계를 돌파하라</p>
             <h1>여러분의 뇌를 꺠우는 SIC BLAST!</h1>
             <br />
-            <Link className="hero-button" to="/game01">게임 시작하기</Link>
+            <Link className="hero-button" to="/sic-blast">게임 시작하기</Link>
           </div>
         </section>
 
