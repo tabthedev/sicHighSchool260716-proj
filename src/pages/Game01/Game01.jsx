@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../index.css'
 import GlobalHeader from '../../pageFormat/header'
+import GlobalFooter from '../../pageFormat/footer'
 
 const BOARD_SIZE = 8
 const COLORS = ['blue', 'purple', 'orange', 'green', 'pink']
@@ -288,9 +289,7 @@ export default function Game01() {
         </section>
       </main>
 
-      <footer className="home-footer">
-        <p>© 2026 서인천고등학교. All rights reserved.</p>
-      </footer>
+      <GlobalFooter />
     </>
   )
 }

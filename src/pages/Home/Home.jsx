@@ -1,6 +1,7 @@
 import '../../index.css'
 import { Link } from 'react-router-dom'
 import GlobalHeader from '../../pageFormat/header'
+import GlobalFooter from '../../pageFormat/footer'
 
 export default function Home() {
     return <>
@@ -45,8 +46,6 @@ export default function Home() {
         
       </main>
 
-      <footer className="home-footer">
-        <p>© 2026 서인천고등학교. All rights reserved.</p>
-      </footer>
+      <GlobalFooter />
     </>
 }
