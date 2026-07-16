@@ -6,7 +6,7 @@ export default function GlobalHeader() {
         <Link className="logo" to="/">SIC BLAST!</Link>
         <nav className="nav" aria-label="주요 메뉴">
           <Link to="/home">게임소개</Link>
-          <Link to="/game01">플레이!</Link>
+          <Link to="/sic-blast">플레이!</Link>
         </nav>
       </header>
     </>

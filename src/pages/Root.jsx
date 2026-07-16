@@ -9,7 +9,7 @@ export default function Root() {
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/home" element={<Home/>}></Route>
-                <Route path="/game01" element={<Game01/>}></Route>
+                <Route path="/sic-blast" element={<Game01/>}></Route>
             </Routes>
         </HashRouter>
     </>
