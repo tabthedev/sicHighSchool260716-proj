@@ -1,5 +1,4 @@
 import '../../index.css'
-import './home.css'
 import { Link } from 'react-router-dom'
 
 const notices = [
@@ -17,6 +16,7 @@ export default function Home() {
           <Link to="/about">학교소개</Link>
           <Link to="/programs">교육활동</Link>
           <Link to="/notice">학교소식</Link>
+          <Link to="/game01">게임</Link>
         </nav>
       </header>
 
