@@ -20,24 +20,24 @@ export default function Home() {
         <section className="section" id="about">
           <div className="section-heading">
             <h2>우리 학교 이야기</h2>
-            <p>학생 한 명 한 명의 가능성을 키우는 교육을 만들어갑니다.</p>
+            <p>남녀 노소 즐길 수 있는 전체 이용가 게임.</p>
           </div>
 
           <div className="cards" id="programs">
             <article className="card">
               <div className="card-icon" aria-hidden="true">📚</div>
-              <h3>깊이 있는 배움</h3>
-              <p>학생 중심 수업과 다양한 탐구 활동으로 스스로 생각하는 힘을 기릅니다.</p>
+              <h3>두뇌 사고력 UP!</h3>
+              <p>두뇌 사고력을 키워 학습 활동에 도움을 준다.</p>
             </article>
             <article className="card">
               <div className="card-icon" aria-hidden="true">🚀</div>
-              <h3>미래를 향한 도전</h3>
-              <p>진로 체험과 프로젝트 활동을 통해 자신의 꿈을 구체적으로 설계합니다.</p>
+              <h3>예측하는 설계</h3>
+              <p>어떤 블럭이 나오고 어떻게 함정을 뚫을지  구체적으로 설계합니다.</p>
             </article>
             <article className="card">
               <div className="card-icon" aria-hidden="true">🤝</div>
-              <h3>함께하는 공동체</h3>
-              <p>존중과 소통을 바탕으로 모두가 행복한 학교 문화를 만들어갑니다.</p>
+              <h3>자신의 한계 넘기</h3>
+              <p>자신의 기록을 넘어서며 한계를 돌파하라</p>
             </article>
           </div>
         </section>
