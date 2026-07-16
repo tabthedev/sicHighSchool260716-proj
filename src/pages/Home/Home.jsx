@@ -1,5 +1,5 @@
 import '../../index.css'
-import { Link } from 'react-router-dom'
+import GlobalHeader from '../../pageFormat/header'
 
 const notices = [
   { id: 1, title: '2026학년도 신입생 입학 안내', date: '2026.07.16' },
@@ -10,14 +10,7 @@ const notices = [
 export default function Home() {
     return <>
 
-      <header className="home-header">
-        <Link className="logo" to="/"></Link>
-        <nav className="nav" aria-label="주요 메뉴">
-          <Link to="/about">게임소개</Link>
-          <Link to="/programs">게임방법</Link>
-          <Link to="/notice">게임소식</Link>
-        </nav>
-      </header>
+      <GlobalHeader />
 
       <main id="top">
         <section className="hero">
