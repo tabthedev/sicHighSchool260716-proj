@@ -179,9 +179,9 @@ export default function Game01() {
 
       <main className="game-page">
         <section className="game-intro">
-          <p className="hero-label">SIC MINI GAME</p>
-          <h1>BLOCK<br /><span>BLAST</span></h1>
-          <p>가로 또는 세로 한 줄을 블록으로 채우면 점수를 얻습니다.</p>
+          <p className="hero-label">가능한 높은 점수를 얻어보세요</p>
+          <h1>SIC<br /><span>BLAST!</span></h1> <br />
+          <p>가로줄 또는 세로줄을 꽉채워 블록을 클리어!</p>
         </section>
 
         <section className="game-shell" aria-label="Block Blast 게임">
